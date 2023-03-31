@@ -59,9 +59,9 @@ function BoxModal({ pages, onClose }) {
             <br/>
             <p>But wait, what do those numbers in blue mean?</p>
             <BetBox/>
-            <p>A (+) symbol means how much you can win with a $100 bet, while a (-) symbol means how much you need to bet to win $100.</p>
+            <p>A <span className="bet-guide-blue">(+)</span> symbol means how much you can win with a $100 bet, while a <span className="bet-guide-blue">(-)</span> symbol means how much you need to bet to win <span className="bet-guide-blue">$100</span></p>
             <br/>
-            <p>For example, you need to bet $100 on Blue Jays to win $150</p>
+            <p>For example, you need to bet $100 on Blue Jays to win <span className="bet-guide-blue">$150</span></p>
           </BetGuide>
         )}
         {currentPage === 3 && (
@@ -69,11 +69,11 @@ function BoxModal({ pages, onClose }) {
             title="Spreads"
             subtitle="BETTING TYPES"
           >
-            <p>A spread is a bet on whether or not a team or player will cover a certain number of points/runs and is available pregame and in-play</p>
+            <p><span className="bet-guide-yellow">A spread</span> is a bet on whether or not a team or player will cover a certain number of points/runs and is available pregame and in-play</p>
             <Spreads/>
-            <p>In this scenario, if you bet on the Blue Jays, any victory by them by two runs or more will result in winning.</p>
+            <p>In this scenario, if you bet on the Blue Jays, any victory by them by <span className="bet-guide-yellow">two runs</span> or more will result in winning.</p>
             <br/>
-            <p>On the other hand, if you bet on the Cardinals, if they lose by less than 2 points or win you would win.</p>
+            <p>On the other hand, if you bet on the Cardinals, if they lose by less than <span className="bet-guide-yellow">2 points</span > or win you would win.</p>
           </BetGuide>
         )}
         {currentPage === 4 && (
@@ -81,10 +81,10 @@ function BoxModal({ pages, onClose }) {
             title="Totals"
             subtitle="BETTING TYPES"
           >
-            <p>Or in other words - over / under. You need to predict whether the total score of a game will be higher or lower than a certain number set by the bookmaker.</p>
+            <p>Or in other words - <span className="bet-guide-yellow">over / under</span>. You need to predict whether the total score of a game will be higher or lower than a certain number set by the bookmaker.</p>
             <Totals/>
-            <p>For example, if the over/under is set at 16.5 for a Blue Jays-Cardinals game, you can bet on whether the total score will be over or under 16.5 runs.</p>
-            <p>If the total score is higher than 16.5, the over wins, and if it's lower, the under wins.</p>
+            <p>For example, if the over/under is set at <span className="bet-guide-yellow">16.5</span> for a Blue Jays-Cardinals game, you can bet on whether the total score will be over or under <span className="bet-guide-yellow">16.5</span> runs.</p>
+            <p>If the total score is higher than <span className="bet-guide-yellow">16.5</span>, the over wins, and if it's lower, the under wins.</p>
           </BetGuide>
         )}
         {currentPage === 5 && (

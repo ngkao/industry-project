@@ -1,3 +1,5 @@
+@import "../../assets/styles/partials/variables";
+
 .BoxModal {
   position: absolute;
   top: 0;
@@ -104,3 +106,10 @@
   &__header {
   }
 }
+
+.bet-guide-blue{
+color: $blue;
+}
+.bet-guide-yellow{
+  color: #f5c242;
+  }
