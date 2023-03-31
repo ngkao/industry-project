@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import avatar from "../../assets/images/avatar.png";
 import searchIcon from "../../assets/images/Search.png";
 import "./Topnav.scss";
 
 
-export default function TopNav(props) {
-   const title = props.setDefaultMenu;
+export default function TopNav() {
+
   return (
     <div className="nav">
       <div className="nav-row">
@@ -20,11 +20,7 @@ export default function TopNav(props) {
         </div>
       </div>
       <ul>
-        <li>{title}</li>
-        <li>{props.defaultMenu}</li>
-        <li>{props.defaultMenu}</li>
-        <li>{props.defaultMenu}</li>
-        <li>{title}</li>
+
       </ul>
     </div>
   );

@@ -3,28 +3,17 @@ import './App.css';
 import HomePage from './pages/HomePage/HomePage';
 import ScoresPage from './pages/Scores/ScoresPage';
 import TopNav from './components/topnav/Topnav';
-import React, { useState } from 'react';
+import React from 'react';
+import BetPage from './pages/Bet/BetPage';
 
 function App() {
-  // const HomeMenu = () {
-  //   "title": "NFLF",
-  //   "TOP",
-  //   "NFL",
-  //   "NBA",
-  //   "NCAAF",
-  //   "MLB",
-  //   "NHL"
-  // }
-  const [defaultMenu, setDefaultMenu] = useState("NFLF");
-  const [scoreMenu, setScoreMenu] = useState("Score Menu");
-
-
   return (
     <BrowserRouter> 
         <TopNav />
         <Routes>
             <Route path={"/"} element={<HomePage />}   />
             <Route path={"/scores"} element={<ScoresPage />}  />
+            <Route path={"/bet"} element={<BetPage />}  />
 
             
         </Routes>
