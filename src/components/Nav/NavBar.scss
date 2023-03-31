@@ -1,19 +1,19 @@
 @use '../../assets/styles/partials/variables' as *;
 
 
-.nav {
-    position: absolute;
-    bottom: 0;
-  
-
-    &__ctr {
-        background-color: $dark-grey;
-
-        display: flex;
+.nav-ctr {
+    // position: absolute;
+    // bottom: 0;
+    display: flex;
         justify-content: space-between;
         align-items: flex-end;
         padding: 0.5rem 1rem 0.5rem;
         background-color: $dark-grey;
+
+    &__ctr {
+        background-color: $dark-grey;
+
+      
     }
 
     &__item {
