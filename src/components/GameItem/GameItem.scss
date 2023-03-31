@@ -1,0 +1,33 @@
+
+
+.gameitem {
+    outline: 1px solid lightgreen;
+
+    &__ctr {
+        outline: 1px solid rgb(238, 144, 208);
+    }
+
+    &__img-team {
+        outline: 1px solid rgb(10, 37, 213);
+
+    }
+
+    &__img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        // outline: 1px solid yellow;
+    }
+
+    &__team {
+        color: white;
+    }
+
+    &__score {
+        color: white;
+    }
+
+    &__time {
+        color: white;  
+    }
+}
