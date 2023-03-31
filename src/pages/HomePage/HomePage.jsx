@@ -88,8 +88,8 @@ export default function HomePage() {
           to="/"
         />
       </div>
-      <NavBar isScoreSelected={false} />
       <BetSimulationBox />
+        <NavBar isScoreSelected={true}/>
     </section>
   );
 }

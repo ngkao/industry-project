@@ -7,12 +7,13 @@
     margin: 0;
     padding: 0;
     font-family: $font;
+    background-color: $dark-grey;
 }
 
 .main {
 
     // width: 428px;
-    height: 926px;
+    // height: 926px;
 
     &__league-list {
         display: flex;
