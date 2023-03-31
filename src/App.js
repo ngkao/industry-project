@@ -12,8 +12,8 @@ function App() {
         {/* <TopNav /> */}
         <Routes>
             <Route path={"/"} element={<HomePage />}   />
-            <Route path={"/scores"} element={<ScoresPage />}  />
-            <Route path={"/bet"} element={<BetPage />}  />
+            <Route path={"/bet"} element={<ScoresPage />}  />
+            {/* <Route path={"/bet"} element={<BetPage />}  /> */}
 
             
         </Routes>

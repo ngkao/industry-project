@@ -54,7 +54,7 @@ export default function HomePage() {
           image2={socks}
           time="7:00 PM"
           betdollar="$75,324"
-          to="/scores"
+          to="/bet"
         />
         <GameItem
           team1="TOR Blue Jays"
@@ -65,7 +65,7 @@ export default function HomePage() {
           image2={ny}
           time="7:00 PM"
           betdollar="$182,635"
-          to="/scores"
+          to="/bet"
         />
         <GameItem
           team1="HOU Astros"

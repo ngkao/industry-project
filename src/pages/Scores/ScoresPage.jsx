@@ -43,7 +43,7 @@ export default function ScoresPage() {
           Check this out!
         </button>
         <div>
-          {showModal && <BoxModal pages={10} onClose={handleCloseModal} />}
+          {showModal && <BoxModal pages={9} onClose={handleCloseModal} />}
         </div>
         <img
           src={close}
@@ -85,7 +85,7 @@ export default function ScoresPage() {
       hasBackgroundColor={true}
       hasText={true}
       />
-      <NavBar isScoreSelected={true} />
+      <NavBar isScoreSelected={false} />
     </section>
   );
 }

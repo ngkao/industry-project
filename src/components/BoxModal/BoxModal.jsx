@@ -18,10 +18,7 @@ function BoxModal({ pages, onClose }) {
     if (currentPage < pages) {
       setActiveButton(false);
       setCurrentPage(currentPage + 1);
-    } else {
-      onClose();
-    }
-    
+    } 
   };
 
   const progress = (currentPage / pages) * 100;
@@ -137,18 +134,7 @@ function BoxModal({ pages, onClose }) {
             <BetSimulationBox hasShades={false}/>
           </BetGuide>
         )}
-        {currentPage === 10 && (
-          <BetGuide
-            title="Make a bet!"
-            subtitle="BETTING TYPES"
-            info="Some info about the second page"
-          >
-            <p>Pick an amount you want to bet</p>
-            <BetSimulationBox hasShades={false}/>
 
-          </BetGuide>
-        )}
-        
 
         
 
