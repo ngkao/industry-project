@@ -2,13 +2,13 @@ import React from 'react';
 import "./GameItem.scss"
 import { Link } from 'react-router-dom';
 
-const GameItem = ({team1,team2,image,score1,score2,time,betdollar,to}) => {
+const GameItem = ({team1,team2,image1, image2,score1,score2,time,betdollar,to}) => {
     return (
         <>
             <div className="gameitem gameitem__top">
                 <div className="gameitem__ctr">
                     <div className="gameitem__img-team">
-                        <img className="gameitem__img" src={image}/>
+                        <img className="gameitem__img" src={image1}/>
                         <p className="gameitem__team">{team1}</p>
                     </div>
                     <p className="gameitem__score">{score1}</p>
@@ -18,7 +18,7 @@ const GameItem = ({team1,team2,image,score1,score2,time,betdollar,to}) => {
             <div className="gameitem">
             <div className="gameitem__ctr">
                     <div className="gameitem__img-team">
-                        <img className="gameitem__img" src={image}/>
+                        <img className="gameitem__img" src={image2}/>
                         <p className="gameitem__team">{team2}</p>
                     </div>
                     <p className="gameitem__score">{score2}</p>
