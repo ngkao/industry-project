@@ -89,6 +89,9 @@ export default function HomePage() {
         />
       </div>
         <NavBar isScoreSelected={true}/>
+        <BetSimulationBox
+            hasShades={true}
+        />
     </section>
   );
 }
