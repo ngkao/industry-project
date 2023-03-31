@@ -5,10 +5,15 @@ import ScoresBlue from "../../assets/icon/scores.png"
 import Scores from "../../assets/icon/scores-gr.png"
 import Bet from "../../assets/icon/bet.png"
 import BetBlue from "../../assets/icon/bet-bl.png"
-
+import { Link, useNavigate } from 'react-router-dom';
+// import BetPage from '../../pages/Bet/BetPage';
 
 
 const NavBar = ({isScoreSelected}) => {
+    const navigate = useNavigate();
+    function handleBetClick() {
+        navigate('/bet')
+    }
     return (
         <div className="nav__ctr">
             <div className="nav">
@@ -32,7 +37,8 @@ const NavBar = ({isScoreSelected}) => {
                     <p className="nav__heading">Favorites</p>
                 </div>
                 {isScoreSelected ? (
-                    <div className="nav__item">
+                    <div className="nav__item"
+                          onClick={handleBetClick}>
                         <img className="nav__icon" src={Bet}/>
                         <p className="nav__heading">Bet</p>
                     </div>

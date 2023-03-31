@@ -1,12 +1,20 @@
+import React from "react";
 import GameItem from "../../components/GameItem/GameItem"
 import "./HomePage.scss"
 import Celtics from "../../assets/logo/Boston_Celtics.svg.png"
 import NavBar from "../../components/Nav/NavBar"
 import BetSimulationBox from "../../components/BetSimulationBox/BetSimulationBox"
 
+
+
 export default function HomePage() {
+
+ 
   return (
     <section className="main">
+
+     
+
         <div className="main__league-list">
             <p className="main__league-item">NFLF</p>
             <p className="main__league-item">TOP</p>
@@ -29,7 +37,7 @@ export default function HomePage() {
               image={Celtics}
               time="0:14 4th"
               betdollar="$128,567"
-              to="/"
+              to="/scores"
             />
             <GameItem
               team1="TOR Blue Jays"
@@ -49,7 +57,7 @@ export default function HomePage() {
               image={Celtics}
               time="0:14 4th"
               betdollar="$128,567"
-              to="/"
+              to="/scores"
             />
             <GameItem
               team1="BOS Celtic"

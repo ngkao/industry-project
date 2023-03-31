@@ -1,0 +1,117 @@
+@import "../../assets/styles/partials/variables";
+
+.main {
+  background-color: #0a0a0c;
+  color: #fff;
+  &__top {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
+    background-color: $dark-grey;
+    &-item {
+      color: #fff;
+      padding-bottom: 0.4rem;
+      margin-left: 2rem;
+      margin-right: auto;
+
+      &--active {
+        border-bottom: 3px solid #6199ff;
+        width: 0rem;
+        border-radius: 2px;
+        padding-left: 0.5rem;
+        padding-right: 3.5rem;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.main__banner {
+  background-color: #004999;
+  display: flex;
+  height: 48px;
+  &-text {
+    margin: auto;
+    padding-left: 1rem;
+    // flex-grow: 1;
+    color: #fff;
+  }
+  &-button {
+    border-radius: 4.5px;
+    background-color: #f5c242;
+    height: 30px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    margin: auto 0 auto 1.5rem;
+    border: transparent;
+  }
+  &-icon {
+    width: 15px;
+    height: 15px;
+    margin: auto;
+  }
+}
+
+.insights {
+  margin: 1rem 1rem 0 1rem;
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    &-title {
+    }
+    &-link {
+      text-decoration: none;
+      color: #2e6bf6;
+      margin-top: 0.5rem;
+    }
+  }
+  &__container {
+    border-bottom: 1px solid #262427;
+    &-image {
+      margin-bottom: 1rem;
+    }
+    &-description {
+      font-size: 16px;
+      margin-bottom: 1rem;
+    }
+    &-time {
+      color: $grey;
+      font-size: 12px;
+      padding-bottom: 0.5rem;
+    }
+  }
+  &__sport {
+    font-size: 18px;
+    margin: 2rem 0;
+  }
+  &__day {
+    font-size: 16px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #262427;
+    margin-bottom: 2rem;
+  }
+}
+.overflow-img {
+  position: absolute;
+  right: 0rem;
+  top: 15.5rem;
+}
+.overflow-text {
+  position: absolute;
+  right: -23.8rem;
+  top: 30rem;
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 0.5rem;
+}
+.overflow-time {
+  position: absolute;
+  right: -0.6rem;
+  top: 33rem;
+  color: $grey;
+  font-size: 12px;
+  padding-bottom: 0.5rem;
+}
