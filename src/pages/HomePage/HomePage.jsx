@@ -102,6 +102,7 @@ export default function HomePage() {
         />
       </div>
         <NavBar isScoreSelected={true}/>
+    
     </section>
   );
 }

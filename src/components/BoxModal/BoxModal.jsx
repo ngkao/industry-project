@@ -8,6 +8,7 @@ import Spreads from "../Spreads/Spreads";
 import Totals from "../Totals/Totals";
 import Money from "../Money/Money";
 import Choice from "../Choice/Choice";
+import BetSimulationBox from "../BetSimulationBox/BetSimulationBox";
 
 function BoxModal({ pages, onClose }) {
   const [activeButton, setActiveButton] = useState(true);
@@ -120,18 +121,20 @@ function BoxModal({ pages, onClose }) {
         )}
         {currentPage === 8 && (
           <BetGuide
-          title="Who are you betting for?"
+          title="Bet"
           >
             <p>Choose your preferred type of bet and make your prediction on the winner!</p>
-            <Totals/>
+            <BetSimulationBox
+              hasShades={true}
+            />
           </BetGuide>
         )}
         {currentPage === 9 && (
           <BetGuide
-            title="Bet"
+            title="Make a Bet"
             subtitle="STRAIGH OR PARALAY?"
           >
-            <Totals/>
+            <BetSimulationBox hasShades={false}/>
           </BetGuide>
         )}
         {currentPage === 10 && (
@@ -141,7 +144,8 @@ function BoxModal({ pages, onClose }) {
             info="Some info about the second page"
           >
             <p>Pick an amount you want to bet</p>
-            <Totals/>
+            <BetSimulationBox hasShades={false}/>
+
           </BetGuide>
         )}
         
