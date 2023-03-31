@@ -18,8 +18,8 @@ const NavBar = ({isScoreSelected}) => {
         navigate('/bet')
     }
     return (
-        <div className="nav__ctr">
-            <div className="nav">
+        <div className="nav">
+            <div className="nav__ctr">
                 <div className="nav__item">
                     <img className="nav__icon" src={News}/>
                     <p className="nav__heading">News</p>
