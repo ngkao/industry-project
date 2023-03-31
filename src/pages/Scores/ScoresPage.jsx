@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import close from "../../assets/images/Vector.png";
 import "./ScoresPage.scss";
 import background from "../../assets/images/background.png";
-import BoxModal from "../../componenets/BoxModal/BoxModal";
+import BoxModal from "../../components/BoxModal/BoxModal";
+
 import overflow from "../../assets/images/overflow.png";
 import avatar from "../../assets/images/avatar.png";
 import NavBar from "../../components/Nav/NavBar";

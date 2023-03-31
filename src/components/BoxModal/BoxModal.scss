@@ -1,5 +1,5 @@
 .BoxModal {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -19,10 +19,8 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     &__close {
       position: absolute;
       top: 10px;
@@ -75,7 +73,20 @@
     color: white;
   }
   &__btn-container{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  &__icon{
+    width: 21.97px;
+    height: 21.97px;
+  }
+  &__header{
+    margin-bottom: 193px;
   }
 }
