@@ -5,4 +5,39 @@
     &__page-subtitle{
         color: rgba(255, 255, 255, 0.31);
     }
+    &__title{
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+    &__info{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 138% */
+
+        text-align: center;
+
+        color: #CBCBCB;
+        margin: auto;
+
+        max-width: 290px;
+    }
+
+    &__sub-info{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 138% */
+
+        text-align: center;
+
+        color: #CBCBCB;
+        max-width: 290px;
+        justify-content: center;
+        margin: auto;
+
+    }
+
 }

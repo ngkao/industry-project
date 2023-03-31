@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./BoxModal.scss";
 import BetGuide from "../../componenets/BetGuide/BetGuide"
+import GoBack from "../../assets/icon/GoBack.svg"
+import Cross from "../../assets/icon/Cross.svg"
 
 function BoxModal({ pages, onClose }) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -18,20 +20,25 @@ function BoxModal({ pages, onClose }) {
   return (
     <div className="BoxModal">
       <div className="BoxModal__content">
-        <button className="BoxModal__close" onClick={onClose}>
-          <span className="BoxModal__close-icon">&times;</span>
-        </button>
-        <div className="BoxModal__progress-bar">
+        <div className="BoxModal__header">
+          <div className="BoxModal__icons">
+          <img src={GoBack} alt="" onClick={() => setCurrentPage(currentPage - 1)} className="BoxModal__icon" />
+          <img src={Cross} alt="" onClick={onClose} className="BoxModal__icon"/>
+          </div>
+          <div className="BoxModal__progress-bar">
           <div
             className="BoxModal__progress-bar__fill"
             style={{ width: `${progress}%` }}
           />
         </div>
+        </div>
+     
         {currentPage === 1 && (
           <BetGuide
-            title="Confused about betting?"
+            title="Betting can seem confusing at first"
             subtitle=""
-            info="Join us as we explore the most popular types of bets through an exciting simulation format. The best part? You don't need to spend a dime - it's all for fun!"
+            info="Join us as we explore the most popular types of bets through an exciting simulation format."
+            subInfo="The best part? You don't need to spend a dime - it's all for fun!"
           >
           </BetGuide>
         )}
