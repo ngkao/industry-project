@@ -1,9 +1,9 @@
 import React from 'react'
 import "./BetBox.scss"
-export default function BetBox() {
+export default function BetBox({hasBackgroundColor, hasText}) {
   return (
-    <div className="card">
-    <div className="row">
+    <div className={`card ${hasBackgroundColor ? "card--selected": "card"}`}>
+    <div className={`row ${hasText ? "row--selected": "row"}`}>
       <div className="name"></div>
       <div className="number"></div>
       <div className="tab">Spread</div>
