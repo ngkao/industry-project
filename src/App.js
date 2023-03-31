@@ -1,10 +1,23 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import HomePage from './pages/HomePage/HomePage';
+import ScoresPage from './pages/Scores/ScoresPage';
+
+import React from 'react';
+import BetPage from './pages/Bet/BetPage';
 
 function App() {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <BrowserRouter> 
+        {/* <TopNav /> */}
+        <Routes>
+            <Route path={"/"} element={<HomePage />}   />
+            <Route path={"/bet"} element={<ScoresPage />}  />
+            {/* <Route path={"/bet"} element={<BetPage />}  /> */}
+
+            
+        </Routes>
+    </BrowserRouter>
   );
 }
 

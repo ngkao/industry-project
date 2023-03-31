@@ -1,0 +1,85 @@
+@use '../../assets/styles/partials/variables' as *;
+@use '../../assets/styles/partials/reset' as *;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+
+.main {
+
+    // width: 428px;
+    // height: 926px;
+
+    &__league-list {
+        display: flex;
+        justify-content: space-evenly;
+        // outline: 2px solid rgb(50, 47, 255);
+        padding: 0.5rem 0;
+        background-color: $dark-grey;
+    }
+
+    &__league-item {
+        // outline: 2px solid greenyellow;
+        color: $grey;
+    }
+
+    &__ctr {
+        background-color: black;
+        padding: 0 1rem;
+    }
+
+    &__title-ctr {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+    }
+
+    &__title {
+        color: white;
+    }
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-grey;
+    height: 5.75rem;
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+  .nav-search_avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: $light-grey;
+    border-radius: 0.375rem;
+    height: 2.75rem;
+    margin-top: 1rem;
+    flex: 1;
+    width: 295px;
+    margin-right: 4rem;
+    margin-left: 0.5rem;
+  }
+  
+  .nav-search_bar {
+    border: none;
+    background: url("../../assets/images/Search.png") no-repeat 10px center;
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    padding-left: 3rem;
+  }
