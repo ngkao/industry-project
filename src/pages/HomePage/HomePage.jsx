@@ -19,7 +19,7 @@ import tor from "../../assets/team-icons/tor.png";
 export default function HomePage() {
   return (
     <section className="main">
-     <div className="header">
+           <div className="header">
         <div>
           <img src={avatar} alt="avatar image" className="nav-search_avatar" />
         </div>
@@ -102,9 +102,6 @@ export default function HomePage() {
         />
       </div>
         <NavBar isScoreSelected={true}/>
-        <BetSimulationBox
-            hasShades={true}
-        />
     </section>
   );
 }
