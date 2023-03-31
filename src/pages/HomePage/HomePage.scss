@@ -1,0 +1,42 @@
+@use '../../assets/styles/partials/variables' as *;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    outline: 3px dashed orange;
+    // width: 428px;
+    height: 926px;
+
+    &__league-list {
+        display: flex;
+        justify-content: space-evenly;
+        // outline: 2px solid rgb(50, 47, 255);
+        padding: 0.5rem 0;
+        background-color: $dark-grey;
+    }
+
+    &__league-item {
+        // outline: 2px solid greenyellow;
+        color: $grey;
+    }
+
+    &__ctr {
+        background-color: black;
+        padding: 0 1rem;
+    }
+
+    &__title-ctr {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+    }
+
+    &__title {
+        color: white;
+    }
+}
