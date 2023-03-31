@@ -1,42 +1,37 @@
-@import "../../assets/styles/partials/variables";
-@import "../../assets/styles/partials/mixins";
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.nav {
-  background-color: $dark-grey;
-  height: 6rem;
-  width: 100%;
-  &-search {
+.header {
     display: flex;
-    &_avatar {
-      height: 2.0625rem;
-      width: 2.0625rem;
-    }
-
-    &_bar {
-      background-color: $light-grey;
-      border-radius: 0.375rem;
-      border-color: transparent;
-      height: 2.75rem;
-      font-size: 17px;
-      width: 295px;
-      &::placeholder{
-        padding-left: 12px;
-      }
-    }
-    &_icon {
-      position: absolute;
-      left: -200;
-      height: 1.3rem;
-      width: 1.3rem;
-    }
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-grey;
+    height: 3rem;
+    width: 80%;
+    border-radius: 6px;
   }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .search-bar input[type="text"] {
+    background-color: $light-grey;
+    border-radius: 0.375rem;
+    border-color: transparent;
+    height: 2.75rem;
+    font-size: 17px;
+    width: 295px;
+    background: url("../../assets/images/Search.png") no-repeat 10px center;
+    &::placeholder{
+      padding-left: 3rem;
+    }
 }
-.nav-row{
-    padding: 50px 0 0 22px;
-}
+  
+  .avatar img {
+    height: 2.0625rem;
+    width: 2.0625rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
