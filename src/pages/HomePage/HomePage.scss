@@ -1,10 +1,12 @@
 @use '../../assets/styles/partials/variables' as *;
+@use '../../assets/styles/partials/reset' as *;
 
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: $font;
 }
 
 .main {
