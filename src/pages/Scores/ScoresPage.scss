@@ -1,16 +1,75 @@
 @import "../../assets/styles/partials/variables";
 
+//topnav syles
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-grey;
+    height: 5.75rem;
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+  .nav-search_avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: $light-grey;
+    border-radius: 0.375rem;
+    height: 2.75rem;
+    margin-top: 1rem;
+    flex: 1;
+    width: 295px;
+    margin-right: 4rem;
+    margin-left: 0.5rem;
+  }
+  
+  .nav-search_bar {
+    border: none;
+    background: url("../../assets/images/Search.png") no-repeat 10px center;
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    padding-left: 3rem;
+  }
+  
+  
+  
+  
 .main {
   background-color: #0a0a0c;
-  color: #FFF;
+  color: #fff;
   &__top {
     display: flex;
     justify-content: space-evenly;
-    // outline: 2px solid rgb(50, 47, 255);
     padding: 0.5rem 0;
     background-color: $dark-grey;
+
     &-item {
       color: #fff;
+      padding-bottom: 0.4rem;
+      margin-left: 2rem;
+      margin-right: auto;
+      font-size: 13px;
+      &--active {
+        border-bottom: 3px solid #6199ff;
+        width: 0rem;
+        border-radius: 2px;
+        padding-left: 0.5rem;
+        padding-right: 3rem;
+        margin-left: auto;
+      font-size: 13px;
+
+      }
     }
   }
 }
@@ -34,7 +93,7 @@
     text-align: center;
     width: 130px;
     margin: auto 0 auto 1.5rem;
-    padding-top: 0.3rem;
+    border: transparent;
   }
   &-icon {
     width: 15px;
@@ -44,29 +103,63 @@
 }
 
 .insights {
-    margin: 1rem 1rem 0 1rem;
+  margin: 1rem 1rem 0 1rem;
   &__heading {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
     &-title {
     }
-    &-link{
-        text-decoration: none;
-        color: $blue;
-        margin-top: 0.5rem;
+    &-link {
+      text-decoration: none;
+      color: #2e6bf6;
+      margin-top: 0.5rem;
     }
   }
   &__container {
-    border-bottom: 1px solid $grey;
+    border-bottom: 1px solid #262427;
     &-image {
-        margin-bottom: 1rem;
+      margin-bottom: 1rem;
     }
     &-description {
-        margin-bottom: 1rem;
+      font-size: 16px;
+      margin-bottom: 1rem;
     }
     &-time {
-        color: $grey;
+      color: $grey;
+      font-size: 12px;
+      padding-bottom: 0.5rem;
     }
   }
+  &__sport {
+    font-size: 18px;
+    margin: 2rem 0;
+  }
+  &__day {
+    font-size: 16px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #262427;
+    margin-bottom: 2rem;
+  }
+}
+.overflow-img {
+  position: absolute;
+  right: 0rem;
+  top: 15.5rem;
+}
+.overflow-text {
+  position: absolute;
+  right: -23.8rem;
+  top: 30rem;
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 0.5rem;
+}
+.overflow-time {
+  position: absolute;
+  right: -0.6rem;
+  top: 33rem;
+  color: $grey;
+  font-size: 12px;
+  padding-bottom: 0.5rem;
 }

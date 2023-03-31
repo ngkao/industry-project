@@ -1,0 +1,128 @@
+@use '../../assets/styles/partials/variables' as *;
+
+
+.betsimulationbox {
+
+    background-color: $dark-grey;
+    
+
+    &__title-ctr {
+        // outline: 1px solid pink;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0;
+    }
+
+    &__title {
+        color: white;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+
+        &--selected {
+            border-bottom: 3px solid $blue;
+        }
+
+        &--unselected {
+            border-bottom: 3px solid white;
+        }
+    }
+
+    &__subtitle-ctr {
+        // outline: 1px solid rgb(238, 255, 192);
+        display: flex;
+        padding: 0.7rem 1rem 1rem;
+
+    }
+
+    &__title-rate {
+        color: white;
+    }
+
+    &__rate {
+        padding-left: 17px;
+        color: $blue;
+    }
+    
+    &__row1 {
+        display: flex;
+        width: 100vw;
+        height: 30px;
+        // outline: 1px solid blue;
+        // background-color: grey;
+        padding: 0 1rem;
+        gap: 5px;
+        margin-bottom: 5px;
+        // background-color: grey;
+
+    }
+
+    &__row1-box {
+        width: 25%;
+        background-color: white;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blue;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.7s background-color;
+            background-color: rgb(222, 221, 221);
+        }
+
+        &--selected {
+            background-color: $blue;
+            color: white;
+
+            &:hover {
+                background-color: $blue; 
+            }
+        }
+    }
+
+    &__row2 {
+        display: flex;
+        width: 100vw;
+        height: 40px;
+        // outline: 1px solid blue;
+        // background-color: grey;
+        padding: 0 1rem;
+        gap: 5px;
+    }
+
+    &__row2-box {
+        width: 50%;
+        background-color: white;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: $blue;
+        padding: 1.5rem;
+    }
+
+    &__row2-title {
+        color: $grey;
+    }
+    &__row2-num {
+        color: rgba(128, 128, 128, 0.221);
+
+        &--selected {
+            color: black;
+        }
+    }
+
+    &__payout-ctr {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 1rem 1rem;
+    }
+
+    &__payout {
+        color: white;
+    }
+}
