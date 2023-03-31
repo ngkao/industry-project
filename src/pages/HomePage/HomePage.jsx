@@ -1,6 +1,7 @@
 import GameItem from "../../components/GameItem/GameItem"
 import "./HomePage.scss"
 import Celtics from "../../assets/logo/Boston_Celtics.svg.png"
+import NavBar from "../../components/Nav/NavBar"
 
 export default function HomePage() {
   return (
@@ -70,6 +71,7 @@ export default function HomePage() {
               to="/"
             />
         </div>
+        <NavBar isScoreSelected={true}/>
     </section>
   )
 }
