@@ -8,7 +8,7 @@ export default function ScoresPage() {
   return (
     <section className="main">
       <div className="main__top">
-        <p className="main__top-item">HOME</p>
+        <p className="main__top-item--active">HOME</p>
         <p className="main__top-item">MY BETS</p>
       </div>
 

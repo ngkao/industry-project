@@ -11,6 +11,9 @@
     background-color: $dark-grey;
     &-item {
       color: #fff;
+      &--active{
+        border-bottom: 1px solid #fff;
+      }
     }
   }
 }
