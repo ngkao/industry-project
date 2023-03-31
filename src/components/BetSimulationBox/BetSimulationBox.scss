@@ -7,7 +7,7 @@
     
 
     &__title-ctr {
-        outline: 1px solid pink;
+        // outline: 1px solid pink;
         display: flex;
         justify-content: center;
         padding: 0.5rem 0;
@@ -18,10 +18,19 @@
         width: 50%;
         display: flex;
         justify-content: center;
+        padding-bottom: 10px;
+
+        &--selected {
+            border-bottom: 3px solid $blue;
+        }
+
+        &--unselected {
+            border-bottom: 3px solid white;
+        }
     }
 
     &__subtitle-ctr {
-        outline: 1px solid rgb(238, 255, 192);
+        // outline: 1px solid rgb(238, 255, 192);
         display: flex;
         padding: 0.7rem 1rem 1rem;
 
@@ -57,6 +66,21 @@
         justify-content: center;
         align-items: center;
         color: $blue;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.7s background-color;
+            background-color: rgb(222, 221, 221);
+        }
+
+        &--selected {
+            background-color: $blue;
+            color: white;
+
+            &:hover {
+                background-color: $blue; 
+            }
+        }
     }
 
     &__row2 {
@@ -78,7 +102,7 @@
         justify-content: center;
         align-items: flex-start;
         color: $blue;
-        padding: 0.2rem;
+        padding: 1.5rem;
     }
 
     &__row2-title {
@@ -86,6 +110,10 @@
     }
     &__row2-num {
         color: $grey;
+
+        &--selected {
+            color: black;
+        }
     }
 
     &__payout-ctr {
