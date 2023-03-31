@@ -1,18 +1,19 @@
 @import "../../assets/styles/partials/variables";
 
 .main {
-    &__top{
-        display: flex;
-        justify-content: space-evenly;
-        // outline: 2px solid rgb(50, 47, 255);
-        padding: 0.5rem 0;
-        background-color: $dark-grey;
-        &-item{
-            color: #FFF;
-        }
+  background-color: #0a0a0c;
+  color: #FFF;
+  &__top {
+    display: flex;
+    justify-content: space-evenly;
+    // outline: 2px solid rgb(50, 47, 255);
+    padding: 0.5rem 0;
+    background-color: $dark-grey;
+    &-item {
+      color: #fff;
     }
+  }
 }
-
 
 .main__banner {
   background-color: #004999;
@@ -39,5 +40,33 @@
     width: 15px;
     height: 15px;
     margin: auto;
+  }
+}
+
+.insights {
+    margin: 1rem 1rem 0 1rem;
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    &-title {
+    }
+    &-link{
+        text-decoration: none;
+        color: $blue;
+        margin-top: 0.5rem;
+    }
+  }
+  &__container {
+    border-bottom: 1px solid $grey;
+    &-image {
+        margin-bottom: 1rem;
+    }
+    &-description {
+        margin-bottom: 1rem;
+    }
+    &-time {
+        color: $grey;
+    }
   }
 }
