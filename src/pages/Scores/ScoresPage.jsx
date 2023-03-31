@@ -32,7 +32,6 @@ export default function ScoresPage() {
           />
         </div>
       </div>
-
       <div className="main__top">
         <p className="main__top-item--active">HOME</p>
         <p className="main__top-item">MY BETS</p>

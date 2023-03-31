@@ -3,6 +3,7 @@ import GameItem from "../../components/GameItem/GameItem";
 import "./HomePage.scss";
 import NavBar from "../../components/Nav/NavBar";
 import BetSimulationBox from "../../components/BetSimulationBox/BetSimulationBox";
+import avatar from "../../assets/images/avatar.png";
 import cle from "../../assets/team-icons/cle.png";
 import col from "../../assets/team-icons/col.png";
 import hou from "../../assets/team-icons/hou.png";
@@ -18,6 +19,18 @@ import tor from "../../assets/team-icons/tor.png";
 export default function HomePage() {
   return (
     <section className="main">
+     <div className="header">
+        <div>
+          <img src={avatar} alt="avatar image" className="nav-search_avatar" />
+        </div>
+        <div className="search-bar">
+          <input
+            className="nav-search_bar"
+            type="text"
+            placeholder="Teams, Players and News"
+          />
+        </div>
+      </div>
       <div className="main__league-list">
         <p className="main__league-item">NFLF</p>
         <p className="main__league-item">TOP</p>
