@@ -38,8 +38,8 @@ export default function ScoresPage() {
           </p>
           <p className="insights__container-time">7h ago</p>
         </div>
-        <p>MLB</p>
-        <p>Today</p>
+        <p className="insights__sport">MLB</p>
+        <p className="insights__day">Today</p>
       </div>
 
       <NavBar isScoreSelected={true}/>

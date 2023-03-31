@@ -7,12 +7,17 @@
     display: flex;
     justify-content: space-evenly;
     // outline: 2px solid rgb(50, 47, 255);
+    
     padding: 0.5rem 0;
     background-color: $dark-grey;
     &-item {
       color: #fff;
+      padding-bottom: 0.4rem;
       &--active{
-        border-bottom: 1px solid #fff;
+        border-bottom: 6px solid $blue;
+        width: 4rem;
+        border-radius: 3px;
+
       }
     }
   }
@@ -56,7 +61,7 @@
     }
     &-link{
         text-decoration: none;
-        color: $blue;
+        color: #2E6BF6;
         margin-top: 0.5rem;
     }
   }
@@ -66,10 +71,23 @@
         margin-bottom: 1rem;
     }
     &-description {
+        font-size: 16px;
         margin-bottom: 1rem;
     }
     &-time {
         color: $grey;
+        font-size: 12px;
+        padding-bottom: 0.5rem;
     }
+  }
+  &__sport{
+    font-size: 18px;
+    margin: 2rem 0;
+  }
+  &__day{
+    font-size: 16px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $grey;
+    margin-bottom: 2rem;
   }
 }
