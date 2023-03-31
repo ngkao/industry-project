@@ -2,9 +2,9 @@
 
 
 .navigation {
-        // position: absolute;
-        // bottom: -10px;
-        // width: 100%;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
 }
 
 .nav {
@@ -41,7 +41,7 @@
         display: flex;
         justify-content: center;
         padding-top: 10px;
-        
+        background-color: $dark-grey
     }
 
     &__line {
