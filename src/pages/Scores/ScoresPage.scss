@@ -1,50 +1,50 @@
 @import "../../assets/styles/partials/variables";
 
+body {
+  background-color: #0a0a0c;
+}
 //topnav syles
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $dark-grey;
-    height: 5.75rem;
-    width: 100%;
-    border-radius: 6px;
-  }
-  
-  .nav-search_avatar {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-left: 1.5rem;
-    margin-top: 1rem;
-    border-radius: 6px;
-  }
-  
-  .search-bar {
-    display: flex;
-    align-items: center;
-    background-color: $light-grey;
-    border-radius: 0.375rem;
-    height: 2.75rem;
-    margin-top: 1rem;
-    flex: 1;
-    width: 295px;
-    margin-right: 4rem;
-    margin-left: 0.5rem;
-  }
-  
-  .nav-search_bar {
-    border: none;
-    background: url("../../assets/images/Search.png") no-repeat 10px center;
-    height: 100%;
-    width: 100%;
-    font-size: 17px;
-    padding-left: 3rem;
-  }
-  
-  
-  
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark-grey;
+  height: 5.75rem;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.nav-search_avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: $light-grey;
+  border-radius: 0.375rem;
+  height: 2.75rem;
+  margin-top: 1rem;
+  flex: 1;
+  width: 295px;
+  margin-right: 4rem;
+  margin-left: 0.5rem;
+}
+
+.nav-search_bar {
+  border: none;
+  background: url("../../assets/images/Search.png") no-repeat 10px center;
+  height: 100%;
+  width: 100%;
+  font-size: 17px;
+  padding-left: 3rem;
+}
+
 .main {
   background-color: #0a0a0c;
   color: #fff;
@@ -67,8 +67,7 @@
         padding-left: 0.5rem;
         padding-right: 3rem;
         margin-left: auto;
-      font-size: 13px;
-
+        font-size: 13px;
       }
     }
   }
@@ -108,8 +107,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    &-title {
-    }
     &-link {
       text-decoration: none;
       color: #2e6bf6;
@@ -138,19 +135,17 @@
   &__day {
     font-size: 16px;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid #262427;
-    margin-bottom: 2rem;
   }
 }
 .overflow-img {
   position: absolute;
   right: 0rem;
-  top: 15.5rem;
+  top: 15rem;
 }
 .overflow-text {
   position: absolute;
-  right: -23.8rem;
-  top: 30rem;
+  right: 0;
+  top: 29.4rem;
   color: #fff;
   font-size: 16px;
   padding-bottom: 0.5rem;
@@ -158,8 +153,43 @@
 .overflow-time {
   position: absolute;
   right: -0.6rem;
-  top: 33rem;
+  top: 32.6rem;
   color: $grey;
   font-size: 12px;
   padding-bottom: 0.5rem;
+}
+
+.text-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #262427;
+  padding-bottom: 1rem;
+
+}
+
+.name {
+  width: 30%;
+  flex-grow: 1;
+}
+
+.number {
+    font-weight: 400;
+    font-size: 12.7628px;
+    line-height: 19px;
+    letter-spacing: -0.255256px;
+    color: #898989;
+  }
+  .tab {
+    font-weight: 600;
+    font-size: 9.57209px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.255256px;
+    color: #898989;
+    width: 50px;
+    &.active {
+      color: white;
+    }
 }

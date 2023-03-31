@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import close from "../../assets/images/Vector.png";
 import "./ScoresPage.scss";
 import background from "../../assets/images/background.png";
-import BoxModal from "../../componenets/BoxModal/BoxModal";
+import BoxModal from "../../components/BoxModal/BoxModal";
+import BetBox from "../../components/BetBox/BetBox";
 import overflow from "../../assets/images/overflow.png";
 import avatar from "../../assets/images/avatar.png";
 import NavBar from "../../components/Nav/NavBar";
@@ -31,7 +32,6 @@ export default function ScoresPage() {
           />
         </div>
       </div>
-
       <div className="main__top">
         <p className="main__top-item--active">HOME</p>
         <p className="main__top-item">MY BETS</p>
@@ -67,14 +67,24 @@ export default function ScoresPage() {
           <p className="insights__container-time">7h ago</p>
           <img src={overflow} alt="" className="overflow-img" />
           <p className="overflow-text">
-            NHl Opening Day best bets: Blue Jays to start fast in St. Louis
+            NHL
           </p>
           <p className="overflow-time">8h ago</p>
         </div>
         <p className="insights__sport">MLB</p>
+        <div className="text-row">
         <p className="insights__day">Today</p>
+      <div className="name"></div>
+      <div className="number"></div>
+      <div className="tab">Spread</div>
+      <div className="tab">Total</div>
+      <div className="tab">Money</div>
+    </div>
       </div>
-
+      <BetBox 
+      hasBackgroundColor={true}
+      hasText={true}
+      />
       <NavBar isScoreSelected={true} />
     </section>
   );
