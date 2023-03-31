@@ -51,45 +51,58 @@ function BoxModal({ pages, onClose }) {
           <BetGuide
             title="Odds"
             subtitle="BASICS"
-            info="Some info about the second page"
-          >
+          > 
+            <p>Blue Jays and Cardinals are playing today!</p>
+            <br/>
+            <p>But wait, what do those numbers in blue mean?</p>
             <BetBox/>
+            <p>A (+) symbol means how much you can win with a $100 bet, while a (-) symbol means how much you need to bet to win $100.</p>
+            <br/>
+            <p>For example, you need to bet $100 on Blue Jays to win $150</p>
           </BetGuide>
         )}
         {currentPage === 3 && (
           <BetGuide
             title="Spreads"
             subtitle="BETTING TYPES"
-            info="Some info about the second page"
           >
+            <p>A spread is a bet on whether or not a team or player will cover a certain number of points/runs and is available pregame and in-play</p>
             <Spreads/>
+            <p>In this scenario, if you bet on the Blue Jays, any victory by them by two runs or more will result in winning.</p>
+            <br/>
+            <p>On the other hand, if you bet on the Cardinals, if they lose by less than 2 points or win you would win.</p>
           </BetGuide>
         )}
         {currentPage === 4 && (
           <BetGuide
             title="Totals"
             subtitle="BETTING TYPES"
-            info="Some info about the second page"
           >
+            <p>Or in other words - over / under. You need to predict whether the total score of a game will be higher or lower than a certain number set by the bookmaker.</p>
             <Totals/>
+            <p>For example, if the over/under is set at 16.5 for a Blue Jays-Cardinals game, you can bet on whether the total score will be over or under 16.5 runs.</p>
+            <p>If the total score is higher than 16.5, the over wins, and if it's lower, the under wins.</p>
           </BetGuide>
         )}
         {currentPage === 5 && (
           <BetGuide
             title="Money"
             subtitle="BETTING TYPES"
-            info="Some info about the second page"
-          >
+          > 
+            <p>A simple straight bet, selecting which side will win an event.</p>
             <Money />
+            <p>If you bet on Blue Jays, and, they win: receive $270 ($170 stake + $100 profit).</p>
+            <br></br>
+            <p>If you bet on Cardinals, and they win: receive $230 ($100 stake + $130 profit)</p>
           </BetGuide>
         )}
         
         {currentPage === 6 && (
           <BetGuide
             title="Who are you betting for?"
-            subtitle="BETTING TYPES"
-            info="Some info about the second page"
           >
+            <p>A simple straight bet, selecting which side will win an event.</p>
+
             <Choice/>
           </BetGuide>
         )}
@@ -97,36 +110,34 @@ function BoxModal({ pages, onClose }) {
         {currentPage === 7 && (
           <BetGuide
           title="Who are you betting for?"
-            subtitle="BETTING TYPES"
-            info="Some info about the second page"
           >
+            <p>Choose your preferred type of bet and make your prediction on the winner!</p>
             <Choice/>
           </BetGuide>
         )}
         {currentPage === 8 && (
           <BetGuide
-            title="Spreads"
-            subtitle="BETTING TYPES"
-            info="Some info about the second page"
+          title="Who are you betting for?"
           >
+            <p>Choose your preferred type of bet and make your prediction on the winner!</p>
             <Totals/>
           </BetGuide>
         )}
         {currentPage === 9 && (
           <BetGuide
-            title="Spreads"
-            subtitle="BETTING TYPES"
-            info="Some info about the second page"
+            title="Bet"
+            subtitle="STRAIGH OR PARALAY?"
           >
             <Totals/>
           </BetGuide>
         )}
         {currentPage === 10 && (
           <BetGuide
-            title="Spreads"
+            title="Make a bet!"
             subtitle="BETTING TYPES"
             info="Some info about the second page"
           >
+            <p>Pick an amount you want to bet</p>
             <Totals/>
           </BetGuide>
         )}
