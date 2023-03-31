@@ -1,0 +1,17 @@
+@use './mixins' as *;
+@use './fonts' as *;
+@use './variables' as *;
+
+//Globals
+//Boilder Plate Setup
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+h1, h2, h3, h4, p{
+    font-family: $font;
+
+}
