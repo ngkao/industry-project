@@ -18,8 +18,11 @@ const NavBar = ({isScoreSelected}) => {
         navigate('/bet')
     }
     return (
-        <div className="nav">
-            <div className="nav__ctr">
+        <div className="navigation">
+
+       
+        <div className="nav-ctr">
+            <div className="nav">
                 <div className="nav__item">
                     <img className="nav__icon" src={News}/>
                     <p className="nav__heading">News</p>
@@ -59,6 +62,7 @@ const NavBar = ({isScoreSelected}) => {
             <div className="nav__line-ctr">
                 <div className="nav__line"></div>
             </div>
+        </div>
         </div>
     );
 };
