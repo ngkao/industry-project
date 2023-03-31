@@ -1,0 +1,118 @@
+  .card {
+      background: #121212;
+      padding: 28px 18px;
+      margin-top: 62px;
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 10px;
+        .name {
+          width: 30%;
+          flex-grow: 1;
+  
+          .text {
+            line-height: 18px;
+            letter-spacing: -0.255256px;
+            color: #898989;
+            &.white {
+              color: white;
+            }
+            &.text1 {
+              font-size: 10px;
+              font-weight: 400;
+            }
+            &.text2 {
+              font-size: 12px;
+              font-weight: 600;
+            }
+          }
+        }
+        .number {
+          font-weight: 400;
+          font-size: 12.7628px;
+          line-height: 19px;
+          letter-spacing: -0.255256px;
+          color: #898989;
+        }
+        .tab {
+          font-weight: 600;
+          font-size: 9.57209px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: -0.255256px;
+          color: #898989;
+          width: 50px;
+          &.active {
+            color: white;
+          }
+        }
+        .box {
+          background: rgba(217, 217, 217, 0.25);
+          border-radius: 2.39302px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 40px;
+          opacity: 0.3;
+          &.white-box {
+            background: white;
+            .white-text {
+              color: black;
+            }
+          }
+          &.active {
+            opacity: 1;
+          }
+          .white-text {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: -0.255256px;
+            color: #ffffff;
+          }
+          .blue-text {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: -0.255256px;
+            color: #6199ff;
+          }
+        }
+      }
+    }
+    .last-para {
+      font-weight: 600;
+      font-size: 13.7587px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: -0.005em;
+      color: #fbfbfb;
+      margin-top: 20px;
+    }
+    .button {
+      background: #0379ff;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: -0.32px;
+      color: #ffffff;
+      width: 174px;
+      height: 41px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      margin: 56px auto;
+      &.disabled {
+        background: #828282;
+      }
+    }
+  
+  

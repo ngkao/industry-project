@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import "./BoxModal.scss";
-import BetGuide from "../../componenets/BetGuide/BetGuide"
+import BetGuide from "../BetGuide/BetGuide"
 import GoBack from "../../assets/icon/GoBack.svg"
 import Cross from "../../assets/icon/Cross.svg"
+import BetBox from "../../components/BetBox/BetBox";
+import Spreads from "../Spreads/Spreads";
+import Totals from "../Totals/Totals";
+import Money from "../Money/Money";
+import Choice from "../Choice/Choice";
 
 function BoxModal({ pages, onClose }) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -48,7 +53,7 @@ function BoxModal({ pages, onClose }) {
             subtitle="BASICS"
             info="Some info about the second page"
           >
-            <p>Betting Component</p>
+            <BetBox/>
           </BetGuide>
         )}
         {currentPage === 3 && (
@@ -57,9 +62,78 @@ function BoxModal({ pages, onClose }) {
             subtitle="BETTING TYPES"
             info="Some info about the second page"
           >
-            <p>Betting Component</p>
+            <Spreads/>
           </BetGuide>
         )}
+        {currentPage === 4 && (
+          <BetGuide
+            title="Totals"
+            subtitle="BETTING TYPES"
+            info="Some info about the second page"
+          >
+            <Totals/>
+          </BetGuide>
+        )}
+        {currentPage === 5 && (
+          <BetGuide
+            title="Money"
+            subtitle="BETTING TYPES"
+            info="Some info about the second page"
+          >
+            <Money />
+          </BetGuide>
+        )}
+        
+        {currentPage === 6 && (
+          <BetGuide
+            title="Who are you betting for?"
+            subtitle="BETTING TYPES"
+            info="Some info about the second page"
+          >
+            <Choice/>
+          </BetGuide>
+        )}
+        
+        {currentPage === 7 && (
+          <BetGuide
+          title="Who are you betting for?"
+            subtitle="BETTING TYPES"
+            info="Some info about the second page"
+          >
+            <Choice/>
+          </BetGuide>
+        )}
+        {currentPage === 8 && (
+          <BetGuide
+            title="Spreads"
+            subtitle="BETTING TYPES"
+            info="Some info about the second page"
+          >
+            <Totals/>
+          </BetGuide>
+        )}
+        {currentPage === 9 && (
+          <BetGuide
+            title="Spreads"
+            subtitle="BETTING TYPES"
+            info="Some info about the second page"
+          >
+            <Totals/>
+          </BetGuide>
+        )}
+        {currentPage === 10 && (
+          <BetGuide
+            title="Spreads"
+            subtitle="BETTING TYPES"
+            info="Some info about the second page"
+          >
+            <Totals/>
+          </BetGuide>
+        )}
+        
+
+        
+
         
         {/* etc. */}
         <div className="BoxModal__btn-container">
@@ -67,7 +141,7 @@ function BoxModal({ pages, onClose }) {
             className="BoxModal__btn-next"
             onClick={handleNextPage}
           >
-            <p className="BoxModal__text-next">Next</p>
+          <p className="BoxModal__text-next">Next</p>
           </button>
         </div>
       </div>
