@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import BoxModal from "../../componenets/BoxModal/BoxModal";
+import React from "react";
 import GameItem from "../../components/GameItem/GameItem"
 import "./HomePage.scss"
 import Celtics from "../../assets/logo/Boston_Celtics.svg.png"
@@ -8,26 +7,12 @@ import NavBar from "../../components/Nav/NavBar"
 
 
 export default function HomePage() {
-    const [showModal, setShowModal] = useState(false);
 
-    const handleOpenModal = () => {
-      setShowModal(true);
-    };
-  
-    const handleCloseModal = () => {
-      setShowModal(false);
-    };
-  
  
   return (
     <section className="main">
 
-      <div>
-      <button onClick={handleOpenModal}>Open Modal</button>
-        {showModal && (
-          <BoxModal pages={10} onClose={handleCloseModal} />
-        )}
-      </div>
+     
 
         <div className="main__league-list">
             <p className="main__league-item">NFLF</p>
