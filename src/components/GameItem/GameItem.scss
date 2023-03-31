@@ -1,15 +1,27 @@
-
+@use '../../assets/styles/partials/variables' as *;
 
 .gameitem {
-    outline: 1px solid lightgreen;
+    // outline: 1px solid lightgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__top {
+        padding-top: 1rem;
+    }
 
     &__ctr {
-        outline: 1px solid rgb(238, 144, 208);
+        // outline: 1px solid rgb(238, 144, 208);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
     }
 
     &__img-team {
-        outline: 1px solid rgb(10, 37, 213);
-
+        // outline: 1px solid rgb(10, 37, 213);
+        display: flex;
+        align-items: center;
     }
 
     &__img {
@@ -21,6 +33,7 @@
 
     &__team {
         color: white;
+        padding-left: 10px;
     }
 
     &__score {
@@ -29,5 +42,26 @@
 
     &__time {
         color: white;  
+    }
+
+    &__bet-ctr {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $grey;
+    }
+
+    &__bet {
+        color: white;
+
+        &--highlighted {
+            // font-weight: bold;
+        }
+    }
+
+    &__link {
+        color: $blue;
+        cursor: pointer;
     }
 }

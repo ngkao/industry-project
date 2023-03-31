@@ -9,7 +9,7 @@
 
 .main {
     outline: 3px dashed orange;
-    width: 428px;
+    // width: 428px;
     height: 926px;
 
     &__league-list {
@@ -27,12 +27,13 @@
 
     &__ctr {
         background-color: black;
+        padding: 0 1rem;
     }
 
     &__title-ctr {
         display: flex;
         justify-content: space-between;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0;
     }
 
     &__title {

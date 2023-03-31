@@ -20,8 +20,54 @@ export default function HomePage() {
               <h3 className="main__title">Go to NBA</h3>
             </div>
             <GameItem
-              team1="Celtic"
+              team1="BOS Celtic"
+              score1="109"
+              team2="CLE Cavaliers"
+              score2="107"
               image={Celtics}
+              time="0:14 4th"
+              betdollar="$128,567"
+              to="/"
+            />
+            <GameItem
+              team1="TOR Blue Jays"
+              score1="6"
+              team2="STL Cardinals"
+              score2="7"
+              image={Celtics}
+              time="0:14 4th"
+              betdollar="$128,567"
+              to="/scores"
+            />
+            <GameItem
+              team1="BOS Celtic"
+              score1="109"
+              team2="CLE Cavaliers"
+              score2="107"
+              image={Celtics}
+              time="0:14 4th"
+              betdollar="$128,567"
+              to="/"
+            />
+            <GameItem
+              team1="BOS Celtic"
+              score1="109"
+              team2="CLE Cavaliers"
+              score2="107"
+              image={Celtics}
+              time="0:14 4th"
+              betdollar="$128,567"
+              to="/"
+            />
+            <GameItem
+              team1="BOS Celtic"
+              score1="109"
+              team2="CLE Cavaliers"
+              score2="107"
+              image={Celtics}
+              time="0:14 4th"
+              betdollar="$128,567"
+              to="/"
             />
         </div>
     </section>
