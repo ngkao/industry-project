@@ -3,6 +3,7 @@ import close from "../../assets/images/Vector.png";
 import "./ScoresPage.scss";
 import background from "../../assets/images/background.png";
 import BoxModal from "../../componenets/BoxModal/BoxModal";
+import overflow from "../../assets/images/overflow.png";
 
 import NavBar from "../../components/Nav/NavBar";
 
@@ -20,7 +21,7 @@ export default function ScoresPage() {
   return (
     <section className="main">
       <div className="main__top">
-        <p className="main__top-item">HOME</p>
+        <p className="main__top-item--active">HOME</p>
         <p className="main__top-item">MY BETS</p>
       </div>
 
@@ -55,9 +56,14 @@ export default function ScoresPage() {
             MLB Opening Day best bets: Blue Jays to start fast in St. Louis
           </p>
           <p className="insights__container-time">7h ago</p>
+          <img src={overflow} alt="" className="overflow-img"/>
+          <p className="overflow-text">
+            NHl Opening Day best bets: Blue Jays to start fast in St. Louis
+          </p>
+          <p className="overflow-time">8h ago</p>
         </div>
-        <p>MLB</p>
-        <p>Today</p>
+        <p className="insights__sport">MLB</p>
+        <p className="insights__day">Today</p>
       </div>
 
       <NavBar isScoreSelected={true}/>
