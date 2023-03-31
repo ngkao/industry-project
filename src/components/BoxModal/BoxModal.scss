@@ -21,6 +21,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     &__close {
       position: absolute;
       top: 10px;
@@ -87,6 +88,5 @@
     height: 21.97px;
   }
   &__header{
-    margin-bottom: 193px;
   }
 }
