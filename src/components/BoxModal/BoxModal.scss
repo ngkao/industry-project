@@ -42,29 +42,41 @@
     &__close-icon {
       display: block;
     }
-
-    
-    
   }
   &__progress-bar {
     height: 10px;
     width: 100%;
-    background-color: white;
+    background-color: #868686;
     margin-top: 10px;
     border-radius: 5px;
     &__fill {
       height: 100%;
-      background-color: #868686;border-radius: 5px;
+      background-color: white;
+      border-radius: 5px;
     }
   }
-  &__btn-next{
-    background-color: #0379FF;
-    border: none;
-    border-radius: .375rem;
+  &__btn-next {
+    background-color: transparent;
+    border: 1px solid #0a6ed1;
+    border-radius: 0.375rem;
     width: 174px;
     height: 41px;
+    cursor: pointer;
+    &:hover {
+      background-color: #0a6ed1;
+    }
+    &--active{
+      background-color: #0a6ed1;
+      border: none;
+      border-radius: 0.375rem;
+      width: 174px;
+      height: 41px;
+      cursor: pointer;
+      &:hover {
+        background-color: #0a6ed1;
+    }}
   }
-  &__text-next{
+  &__text-next {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -73,7 +85,7 @@
     letter-spacing: -0.32px;
     color: white;
   }
-  &__btn-container{
+  &__btn-container {
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -82,11 +94,13 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
+    cursor: pointer;
   }
-  &__icon{
+  &__icon {
     width: 21.97px;
     height: 21.97px;
+    cursor: pointer;
   }
-  &__header{
+  &__header {
   }
 }

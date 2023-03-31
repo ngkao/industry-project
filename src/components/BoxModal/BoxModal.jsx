@@ -10,14 +10,17 @@ import Money from "../Money/Money";
 import Choice from "../Choice/Choice";
 
 function BoxModal({ pages, onClose }) {
+  const [activeButton, setActiveButton] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
 
   const handleNextPage = () => {
     if (currentPage < pages) {
+      setActiveButton(false);
       setCurrentPage(currentPage + 1);
     } else {
       onClose();
     }
+    
   };
 
   const progress = (currentPage / pages) * 100;
@@ -149,7 +152,7 @@ function BoxModal({ pages, onClose }) {
         {/* etc. */}
         <div className="BoxModal__btn-container">
           <button
-            className="BoxModal__btn-next"
+            className={`${activeButton ? "BoxModal__btn-next--active" : "BoxModal__btn-next"}`}
             onClick={handleNextPage}
           >
           <p className="BoxModal__text-next">Next</p>

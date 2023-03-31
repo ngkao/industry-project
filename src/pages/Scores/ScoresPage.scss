@@ -94,6 +94,10 @@ body {
     width: 130px;
     margin: auto 0 auto 1.5rem;
     border: transparent;
+    cursor: pointer;
+    &:hover{
+        background-color: #F9B60D;
+    }
   }
   &-icon {
     width: 15px;
