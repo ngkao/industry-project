@@ -28,7 +28,7 @@ export default function HomePage() {
               image={Celtics}
               time="0:14 4th"
               betdollar="$128,567"
-              to="/"
+              to="/scores"
             />
             <GameItem
               team1="TOR Blue Jays"
@@ -48,7 +48,7 @@ export default function HomePage() {
               image={Celtics}
               time="0:14 4th"
               betdollar="$128,567"
-              to="/"
+              to="/scores"
             />
             <GameItem
               team1="BOS Celtic"

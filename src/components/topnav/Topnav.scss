@@ -1,0 +1,42 @@
+@import "../../assets/styles/partials/variables";
+@import "../../assets/styles/partials/mixins";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: $dark-grey;
+  height: 6rem;
+  width: 100%;
+  &-search {
+    display: flex;
+    &_avatar {
+      height: 2.0625rem;
+      width: 2.0625rem;
+    }
+
+    &_bar {
+      background-color: $light-grey;
+      border-radius: 0.375rem;
+      border-color: transparent;
+      height: 2.75rem;
+      font-size: 17px;
+      width: 295px;
+      &::placeholder{
+        padding-left: 12px;
+      }
+    }
+    &_icon {
+      position: absolute;
+      left: -200;
+      height: 1.3rem;
+      width: 1.3rem;
+    }
+  }
+}
+.nav-row{
+    padding: 50px 0 0 22px;
+}

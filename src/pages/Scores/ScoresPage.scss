@@ -1,0 +1,43 @@
+@import "../../assets/styles/partials/variables";
+
+.main {
+    &__top{
+        display: flex;
+        justify-content: space-evenly;
+        // outline: 2px solid rgb(50, 47, 255);
+        padding: 0.5rem 0;
+        background-color: $dark-grey;
+        &-item{
+            color: #FFF;
+        }
+    }
+}
+
+
+.main__banner {
+  background-color: #004999;
+  display: flex;
+  height: 48px;
+  &-text {
+    margin: auto;
+    padding-left: 1rem;
+    // flex-grow: 1;
+    color: #fff;
+  }
+  &-button {
+    border-radius: 4.5px;
+    background-color: #f5c242;
+    height: 30px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    margin: auto 0 auto 1.5rem;
+    padding-top: 0.3rem;
+  }
+  &-icon {
+    width: 15px;
+    height: 15px;
+    margin: auto;
+  }
+}
