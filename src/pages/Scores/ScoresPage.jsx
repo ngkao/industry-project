@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState }  from "react";
 import close from "../../assets/images/Vector.png";
 import "./ScoresPage.scss";
 import background from "../../assets/images/background.png";
+import BoxModal from "../../componenets/BoxModal/BoxModal";
+
 import NavBar from "../../components/Nav/NavBar";
 
 export default function ScoresPage() {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleOpenModal = () => {
+      setShowModal(true);
+    };
+  
+    const handleCloseModal = () => {
+      setShowModal(false);
+    };
+  
   return (
     <section className="main">
       <div className="main__top">
@@ -13,10 +25,16 @@ export default function ScoresPage() {
       </div>
 
       <div className="main__banner">
+
         <p className="main__banner-text">Confused about betting?</p>
-        <a href="" className="main__banner-button">
+        <button className="main__banner-button" onClick={handleOpenModal}>
           Check this out!
-        </a>
+        </button>
+        <div>
+        {showModal && (
+          <BoxModal pages={10} onClose={handleCloseModal} />
+        )}
+         </div>
         <img
           src={close}
           alt="icon shaped like an 'x' to indicate closing"
