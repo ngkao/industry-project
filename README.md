@@ -1,5 +1,5 @@
 
-# Industry Challange by [theScore](https://www.thescore.com/)  👾 
+# Industry Challange by [theScore](https://www.thescore.com/)  🏅 
 
 Challenge: To build a solution within 24 hours that will increase the user engangement on the mobile app.
 
@@ -19,6 +19,8 @@ $ npm start
 ```
 
 The front-end runs on http://localhost:3000/
+
+Note: The application was specifically developed for Mobile Viewpoint.
 ## Tech Stack
 
 **Client:** React, SASS, JavaScript
