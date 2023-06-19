@@ -1,7 +1,7 @@
 
 # Industry Challange by [theScore](https://www.thescore.com/)  🏅 
 
-**Challenge**: To build a solution within 24 hours that will increase the user engangement on the mobile app.
+**Challenge**: To build a solution within 24 hours that will increase the user engagement on the mobile app.
 
 **Solution**:  Working as a team of Software Engineers, UX designers and Data Scientists, we have developed a user-friendly educational onboarding process with a simulation component.
 
