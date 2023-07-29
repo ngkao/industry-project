@@ -1,5 +1,5 @@
 
-# Industry Challange by [theScore](https://www.thescore.com/)  🏅 
+# Industry Challenge by [theScore](https://www.thescore.com/)  🏅 
 
 **Challenge**: To build a solution within 24 hours that will increase the user engagement on the mobile app.
 
